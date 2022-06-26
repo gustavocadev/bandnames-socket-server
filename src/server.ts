@@ -10,7 +10,7 @@ class Server {
   #app: Express;
   #port: number;
   #io: SocketIO.Server;
-  #server: any;
+  #server: http.Server;
   constructor() {
     this.#app = express();
 
